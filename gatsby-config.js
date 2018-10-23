@@ -5,7 +5,6 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
-    'gatsby-plugin-offline',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -34,6 +33,7 @@ module.exports = {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
+    `gatsby-plugin-offline`,
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
 }
